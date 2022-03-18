@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    'use strict';
+    function Product(name, price) { 
+    this.name = name;
+    this.price = price;
+    }
+
+    Product.prototype.makeSale = function (sale) {
+    this.price = this.price - (this.price / 100 * sale); 
+    }
+
+    const products = [
+    new Product('ручка', 100), //создаем объекты
+    new Product('книга', 300)
+    ];
+
+    for (let product of products) {
+    product.makeSale(25);
+    };
+    </script>
+</body>
+
+</html>
