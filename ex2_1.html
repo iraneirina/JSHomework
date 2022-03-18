@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2, потому что перед а стоит унарный плюс, увеличивает число на 1
+
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1, потому что унарный плюс стоит после b, поэтому сначало в переменную d запишется b=1, а переменная b станет после этого равной 2
+
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5, потому что a уже равно 2, унарный плюс добавляет еще единицу
+
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4, потому что 2 + 1 дает 3, а унарный плюс увеличивает число на 1
+
+        alert(a); //3, потому что дважды стоял унарный плюс
+        alert(b); //3, потому что дважды стоял унарный плюс
+    </script>
+
+
+</body>
+
+</html>
