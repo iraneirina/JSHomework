@@ -58,7 +58,7 @@ class ProductItem {
 let list = new ProductList();
 
 
-class basket {
+class Basket {
     constructor(container = '.cart-block') {
         this.container = container;
         this.goods = [];
@@ -99,7 +99,7 @@ class basket {
 }
 
 class BasketItem {
-    render(product, img = 'https://via.placeholder.com/200x150') {
+    render(product, img = 'https://via.placeholder.com/100x100') {
         return `<div class="cart-item" data-id="${product.id_product}">
                 <div class="product-bio">
                 <img src="${img}" alt="Some image">
@@ -117,6 +117,7 @@ class BasketItem {
     }
 }
 
+const basket = new Basket();
 
 
 
