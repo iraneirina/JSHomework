@@ -64,7 +64,7 @@ const app = new Vue({
                     this.$data.filtered.push(item);
                 }
             });
-        this.getJson('getProducts.json')
+        this.getJson(`${API}/getProducts.json`)
             .then(data => {
                 for(let item of data){
                     this.products.push(item);

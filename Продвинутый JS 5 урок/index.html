@@ -12,16 +12,17 @@
     <div class="header wrap">
         <header>
             <div class="cart">
-                <form action="#" class="search-form" @submit.prevent="filter"> //submit перезагружает страницу, необходимо это прервать
+                <form action="#" class="search-form" @submit.prevent="filter">
+                    <!--submit перезагружает страницу, необходимо это прервать-->
                     <input type="text" class="search-field" v-model="userSearch">
                     <button type="submit" class="btn-search">
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
-                <button class="btn-cart" type="button" click="showCart = !showCart">Корзина</button>
+                <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
                 <div class="cart-block" v-show="showCart"></div>
                 <p v-if="!cartItems.length">Вы ничего не добавили</p>
-                <div class="cart-item" v-for="item of catrItems" :key="item.id_product">
+                <div class="cart-item" v-for="item of cartItems" :key="item.id_product">
                     <div class="product-bio">
                         <img :src="imgCart" alt="Some img">
                         <div class="product-desk">
@@ -35,19 +36,20 @@
         </header>
     </div>
     <main>
-        <div class="products wrap"></div>
-        <div class="product-item" v-for="product of filtered" :key="product.id_product">
-            <img :src="imgProduct" alt="Some img">
-            <div class="desk">
-                <h3>{{product.product_name}}</h3>
-                <p>{{product.price}}</p>
-                <button class="buy-btn" @click="addProduct(product)">Купить</button>
+        <div class="products wrap">
+            <div class="product-item" v-for="product of filtered" :key="product.id_product">
+                <img :src="imgProduct" alt="Some img">
+                <div class="desk">
+                    <h3>{{product.product_name}}</h3>
+                    <p>{{product.price}}</p>
+                    <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                </div>
             </div>
         </div>
 </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/main.js"></script>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
