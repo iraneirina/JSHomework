@@ -1,0 +1,164 @@
+.header {
+    background-color: $main-color;
+    padding: 18px 0;
+    position: relative;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left .header-right{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-logo-link {
+    margin-right: 41px;
+    text-decoration: none;
+    color: transparent;
+}
+
+.button-search, .button-burger {
+    background-color: transparent; /*чтобы картинка svg была видна*/
+    border: none;
+} 
+
+.account-link {
+    margin: 0 33px;
+    text-decoration: none;
+    color: transparent;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+//окно с корзиной
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+/*меню навигации*/
+
+.main-menu {
+    background-color: #FFFFFF;
+    width: 235px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 40px 36px;
+    position: absolute;
+    right: 0;
+    top:100%;
+    min-height: 764px;
+    display: block;
+}
+
+
+.main-menu-box {
+    position: relative;
+}
+
+.main-menu-close-btn {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.main-menu-close-btn:hover{
+    background-color: #E5E5E5;
+}
+
+.main-menu-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.main-menu-item {
+    margin-bottom: 12px;
+}
+
+.main-menu-list {
+    list-style: none;
+}
+
+.main-menu-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $second-color;
+    text-transform: uppercase;
+}
+
+.main-submenu {
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.main-submenu-item {
+    margin-bottom: 11px;
+}
+
+.main-submenu-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+}
+
+@media (max-width: 760px) {
+    .account-link {
+        display: none;
+    }
+
+    .cart-link {
+        display: none;
+    }
+
+    .button-burger {
+        margin-top: 9px;
+    }
+}
