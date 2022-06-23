@@ -1,0 +1,103 @@
+.promo {
+    background-color: #F1E4E6;
+}
+
+.promo-wrap {
+    min-height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../photo/promo.png);
+    background-size:70% auto;
+    background-repeat: no-repeat;
+    background-position-x: -224px;
+    background-position-y: bottom;
+}
+
+.promo-title {
+    font-size: 48px;
+    color: $main-color;
+    line-height: 40px;
+    margin: 0;
+    border-left: 12px solid $second-color;
+    padding-left: 16px;
+    padding-right: 59px;
+
+}
+
+.brand {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 43px;
+}
+
+.of-luxerious {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fashion {
+    color: $second-color;
+    font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+    .promo-wrap {
+        min-height: 367px;
+        background-size:50% auto;
+        background-position-x: -30px;
+    }
+
+    .promo-title {
+        padding-right: 0;
+        line-height: 25px;
+    }
+    .brand {
+        font-size: 44px;
+    }
+
+    .of-luxerious {
+        font-size: 24px;
+    }
+    
+    .fashion {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 760px) {
+    .promo {
+        background-size: 100%;
+    }
+    
+    .promo-wrap {
+        min-height: 363px; 
+        display: block;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promo-title { 
+        display: block;
+    }
+
+    .brand {
+        font-size: 38px;
+    }
+
+    .of-luxerious {
+        font-size: 20px;
+    }
+    
+    .fashion {
+        font-size: 20px;
+    }
+
+    .promo-title {
+        line-height: 15px;
+    }
+}
+    
+    

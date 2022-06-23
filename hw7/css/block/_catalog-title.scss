@@ -1,0 +1,31 @@
+.page-title {
+    background-color: #F8F3F4;
+}
+
+.page-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 148px;
+}
+
+.new {
+    font-size: 24px;
+    line-height: 29px;
+    color: $second-color;
+}
+
+@media (max-width: 760px) {
+    .page-title-wrap {
+        flex-direction: column;
+    }
+
+    .page-title-new {
+        padding-top: 24px;
+    }
+
+    .page-title-breadcrumb {
+        padding-bottom: 46px;
+    }
+
+}
