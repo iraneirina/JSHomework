@@ -1,0 +1,112 @@
+.feedback {
+    min-height: 448px;
+    background-color: #F4F4F4B2;
+    background-image: url(../photo/feedback.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;  
+}
+
+.feedback-wrap {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.comment {
+    min-width: 424px;
+    text-decoration: none;
+}
+
+.comment-photo {
+    height: 96px;
+    margin-bottom: 35px; 
+}
+.comment-text {
+    line-height: 24px;
+    color: $main-color;
+    font-weight: 400;
+}
+
+.comment-text-italic {
+    font-style: italic;
+}
+
+.subscribe {
+    padding-right: 104px;
+}
+
+.subscribe-text {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.subscribe-heading {
+    font-weight: 700;
+}
+
+.subscribe-heading-mini {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscribe-forma {
+    display: flex;
+}
+
+.subscribe-email {
+    background-color: #E1E1E1;
+    font-size: 14px;
+    line-height: 17px;
+    height: 49px;
+    width: 250px;
+    color: $main-color;
+    padding: 15px 24px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.subscribe-email::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.67;
+    color: $main-color;
+}
+
+.subscribe-email:hover {
+    background-color: #c7c5c5;
+}
+
+.subscribe-submit {
+    background-color: $second-color;
+    height: 49px;
+    width: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.subscribe-submit:hover {
+    background-color: #c35766;
+}
+
+@media (max-width: 1200px) {
+    .feedback-wrap {
+        flex-direction: column;
+    }
+
+    .subscribe {
+        padding: 48px 0 140px 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .comment {
+        min-width: 359px;
+    }
+}

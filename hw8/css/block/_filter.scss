@@ -1,0 +1,180 @@
+/*фильтр в каталоге*/
+
+.filter-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 51px;    
+    padding-bottom: 27px;
+}
+
+.left-filter {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+/*скрываем стрелку*/
+summary { display: block;}
+::-webkit-details-marker {display: none;}
+
+/*закрытый фильтр*/
+
+.filter-open {
+    min-width: 360px;
+    position: relative;
+}
+
+.filter-text {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+/*открытый фильтр*/
+.filter-open[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-open[open] .filter-text {
+    color:$second-color;
+}
+
+.filter-open[open] .filter-svg {
+    color: $second-color;
+}
+
+/*выпадающая часть*/
+
+.filter-content {
+    position: absolute;
+    width: 360px;
+    background-color: #FFFFFF;
+    padding: 24px 15px 16px 17px;
+    color:#6F6E6E;
+}
+
+.filter-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    font-weight: 600;
+    
+}
+
+.filter-element {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    border-left: 5px solid $second-color;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin-bottom: 18px;
+}
+
+.filter-content-list {
+    padding: 13px 17px;
+}
+
+.filter-item {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 11px;
+    text-decoration: none;
+    color:#6F6E6E;
+}
+
+/*открытый подпункт фильтра*/
+.filter-content-menu[open] .filter-element{
+    color: $second-color;
+}
+
+/*фильтр посередине*/
+
+.middle-filter {
+    margin-left: 20px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 297px;
+    margin-left: 32px;
+    padding-top: 16px;
+    @include text-contacts()
+}
+
+.filter-checkbox-label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/*закрытый фильтр*/
+
+.middle-filter-open {
+    position: relative;
+}
+
+/*открытый фильтр*/
+.middle-filter-open[open] .middle-filter-checkbox {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+/*выпадающая часть*/
+.middle-filter-checkbox {
+    position: absolute;
+    min-width: 79px;
+    background-color: #FFFFFF;
+    padding: 9px 9px 0 9px;
+}
+
+.filter-checkbox-label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 1200px) {
+    .filter-wrap {
+        justify-content: space-between;
+    }
+
+    .filter-text {
+        padding-top: 16px;
+        padding-left: 0;
+    }
+
+    .product-visible {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 760px) { 
+    
+    .filter-open {
+        min-width: 50px;
+    }
+    
+    .filter-text-visible {
+        display: block;
+        display: none;
+    }
+
+    .filter-svg {
+        width: 37px;
+        height: 25px;
+    }
+
+    .filter-text {
+        width: 50px;
+        margin-right: 0;
+    }
+
+    .middle-filter {
+        margin-left: 0;
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 217px;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: -5px;
+    }
+}

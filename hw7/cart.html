@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap header-wrap">
+            <div class="header-left">
+                <a href="#" class="header-logo-link">
+                    <img src="photo/logo.png" width="44" height="38" alt="logo">
+                </a>
+                <button class="button-search">
+                    <img src="photo/search.svg" alt="search">
+                </button>
+            </div>
+            <div class="header-right">
+                <button class="button-burger">
+                    <img src="photo/burger.svg" alt="logo">
+                </button>
+                <nav class="main-menu main-menu-close">
+                    <!--main-menu-close-->
+                    <div class="main-menu-box">
+                        <button class="main-menu-close-btn"><img src="photo/close.svg" alt="close"></button>
+                        <p class="main-menu-title">MENU</p>
+                        <ul class="main-menu-list">
+                            <li class="main-menu-item"><a href="#" class="main-menu-link">MAN</a>
+                                <ul class="main-submenu">
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Accessories</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Bags</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Denim</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu-item"><a href="#" class="main-menu-link">WOMAN</a>
+                                <ul class="main-submenu">
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Accessories</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Bags</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Denim</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            <li class="main-menu-item"><a href="#" class="main-menu-link">KIDS</a>
+                                <ul class="main-submenu">
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Accessories</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Bags</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">Denim</a>
+                                    </li>
+                                    <li class="main-submenu-item"><a href="#" class="main-submenu-link">T-Shirts</a>
+                                    </li>
+                                </ul>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="#" class="account-link">
+                    <img src="photo/account.png" alt="logo">
+                </a>
+                <a href="#" class="cart-link">
+                    <img src="photo/cart.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="page-title">
+            <div class="wrap page-title-wrap">
+                <div class="page-title-new">
+                    <h2 class="new">SHOPPING CART</h2>
+                </div>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="cart-block wrap">
+                <div class="cart-products">
+                    <div class="cart-left">
+                        <div class="cart-product">
+                            <div class="cart-img-block"><img src="photo/hat.png" alt="product" class="cart-prod-img">
+                            </div>
+                            <div class="cart-prod-text">
+                                <h3 class="cart-prod-head">MANGO PEOPLE T-SHIRT</h3>
+                                <ul class="cart-feature">
+                                    <li class="cart-item">Price: <span class="price-color">$300</span></li>
+                                    <li class="cart-item">Color: Red</li>
+                                    <li class="cart-item">Size: Xl</li>
+                                    <li class="cart-item">Quantity:</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="cart-img-block"><img src="photo/red-jacket.png" alt="product"
+                                    class="cart-prod-img"></div>
+                            <div class="cart-prod-text">
+                                <h3 class="cart-prod-head">MANGO PEOPLE T-SHIRT</h3>
+
+                                <ul class="cart-feature">
+                                    <li class="cart-item">Price: <span class="price-color">$300</span></li>
+                                    <li class="cart-item">Color: Red</li>
+                                    <li class="cart-item">Size: Xl</li>
+                                    <li class="cart-item">Quantity:</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-buttons">
+                        <div class="cart-buttons-wrap">
+                            <button class="shopping-btn">CLEAR SHOPPING CART</button>
+                            <button class="shopping-btn">CONTINUE SHOPPING</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-form-block">
+                    <div class="cart-form">
+                        <h3 class="cart-form-head">SHIPPING ADRESS</h3>
+                        <form action="#" class="form-adress">
+                            <input type="text" placeholder="Bangladesh" class="cart-field" required><br>
+                            <input type="text" placeholder="State" class="cart-field" required><br>
+                            <input type="text" placeholder="Postcode / Zip" class="cart-field" required><br>
+                            <button type="submit" class="quote-btn">GET A QUOTE</button>
+                        </form>
+                    </div>
+                    <div class="checkout">
+                        <p class="sub">SUB TOTAL<span class="sub-price">$900</span></p>
+                        <p class="grand">GRAND TOTAL<span class="grand-price">$900</span></p>
+                        <img src="photo/line-checkout.svg" alt="line" class="line-checkout">
+                        <div class="checkout-btn-wrap"><button class="checkout-btn">PROCEED TO CHECKOUT</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="feedback">
+        <div class="wrap feedback-wrap">
+            <a href="#" class="comment">
+                <img src="photo/comment.png" alt="comment_photo" class="comment-photo">
+                <p class="comment-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                        class="comment-text-italic"> a pulvinar purus
+                        condimentum“</span></p>
+            </a>
+            <div class="subscribe">
+                <div class="subscribe-text">
+                    <h3 class="subscribe-heading">SUBSCRIBE</h3>
+                    <h4 class="subscribe-heading-mini">FOR OUR NEWLETTER AND PROMOTION</h4>
+                </div>
+                <div class="subscribe-form">
+                    <div class="subscribe-forma">
+                        <input class="subscribe-email" type="email" placeholder="Enter Your Email" required>
+                        <input class="subscribe-submit" type="submit" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <div class="footer-left">
+                <p class="footer-text">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="footer-link facebook">
+                    <img src="photo/fb.svg" alt="facebook">
+                </a>
+                <a href="#" class="footer-link instagram">
+                    <img src="photo/inst.svg" alt="instagram">
+                </a>
+                <a href="#" class="footer-link pinterest">
+                    <img src="photo/pin.svg" alt="pinterestk">
+                </a>
+                <a href="#" class="footer-link twitter">
+                    <img src="photo/tw.svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

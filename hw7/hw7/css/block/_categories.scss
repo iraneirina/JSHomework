@@ -1,0 +1,90 @@
+.categories {
+    margin-top: 65px;
+}
+
+.categories-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-item {
+    background-color: #C4C4C4;
+    width: 32%;
+    min-height: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-item-women {
+    background-image: url(../photo/women.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.category-item-men {
+    background-image: url(../photo/men.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.category-item-kids {
+    background-image: url(../photo/kids.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.category-item-acc {
+    width: 100%;
+    margin-top: 30px;
+    min-height: 180px;
+    background-image: url(../photo/accesories.jpg);
+}
+
+.category_text {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.category_red {
+    color: $second-color;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.category_text_accesories {
+    top: 71px;
+    left: 495px;
+}
+
+
+@media (max-width: 1200px) {
+    .category-item {
+        width: 32%;
+        min-height: 168px;
+    }
+
+    .category-item-acc {
+        min-height: 116px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .categories-wrap {
+        align-items: center;
+    }
+
+    .category-item {
+        width: 100%;
+        min-height: 247px;
+        margin-bottom: 32px;
+    }
+
+    .category-item-acc {
+        margin-top: 0;
+    }
+}
