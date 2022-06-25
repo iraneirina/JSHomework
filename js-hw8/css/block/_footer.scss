@@ -1,0 +1,53 @@
+.footer {
+    background-color: $main-color;
+    padding: 30px 0;
+    margin-top: auto;
+    min-height: 79px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    color: #FBFBFB;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.instagram {
+    padding: 0 7px ;
+}
+
+.pinterest {
+    padding-right: 7px;
+}
+
+.footer-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+   
+    .footer {
+        padding: 0;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+     
+    .footer-right {
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+
+    .footer-left {
+        padding-bottom: 9px;
+    }
+}
